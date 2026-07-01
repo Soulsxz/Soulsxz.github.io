@@ -1,47 +1,61 @@
-/* Bước 3: Định dạng thẻ body (Nền tối huyền bí để làm nổi bật các thành phần khác) */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
     padding: 20px;
-    background-color: #121214; /* Màu nền tối chủ đạo */
-    color: #e1e1e6;            /* Màu chữ xám sáng để không bị mỏi mắt */
+    background-color: #121214; 
+    color: #e1e1e6;            
 }
 
-/* Bước 4: Định dạng thẻ header (Màu tím Neon cực kỳ nổi bật) */
+h1 {
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #03dac6; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;       
+}
+
+p {
+    line-height: 1.8;
+    color: #c4c4cc; 
+}
+
 header {
-    background-color: #6200ee; /* Màu tím đậm nổi bật */
-    color: #ffffff;            /* Chữ màu trắng */
+    background-color: #6200ee;
+    color: #ffffff;            
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(98, 0, 238, 0.3); /* Tạo hiệu ứng phát sáng nhẹ */
+    box-shadow: 0 4px 15px rgba(98, 0, 238, 0.3); 
 }
 
-/* Bước 5: Định dạng thẻ nav (Màu tối hơn một chút để tạo chiều sâu) */
 nav {
     background-color: #1f1f23;
     padding: 12px;
     border-radius: 4px;
     border: 1px solid #323238;
+    display: inline-block;
+    width: 80%;
 }
 
-/* Bước 8: Định dạng thẻ li (Xếp thành hàng ngang làm menu) */
+nav img {
+    width: 10%;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-li {
+/*li {
     display: inline-block; 
     width: 120px;          
     text-align: center;
-}
+}*/
 
-/* Bước 6: Định dạng thẻ main (Nền xám đen cao cấp, làm nổi bật nội dung bên trong) */
 main {
-    background-color: #1e1e24; /* Nền khu vực nội dung chính */
+    background-color: #1e1e24;
     font-size: 17px;
     padding: 25px;
     margin-top: 20px;
@@ -49,22 +63,6 @@ main {
     border: 1px solid #2e2e38;
 }
 
-/* Bước 9: Định dạng thẻ h1 (Màu xanh ngọc Cyan - cực kỳ nổi bật trên nền tối) */
-h1 {
-    text-align: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #03dac6; /* Màu xanh ngọc dạ quang */
-    text-transform: uppercase; /* Viết hoa toàn bộ tiêu đề cho cá tính */
-    letter-spacing: 1px;       /* Giãn khoảng cách chữ */
-}
-
-/* Bước 10: Định dạng thẻ p (Màu chữ trắng mờ giúp đọc nội dung dễ chịu) */
-p {
-    line-height: 1.8;
-    color: #c4c4cc; 
-}
-
-/* Bước 7: Định dạng thẻ footer (Nền tối đồng bộ) */
 footer {
     background-color: #141416;
     padding: 20px;
@@ -74,11 +72,82 @@ footer {
     border-top: 1px solid #29292e;
 }
 
-/* Màu liên kết trong footer để nổi bật và dễ nhìn thấy */
 footer a {
     color: #03dac6;
     text-decoration: none;
 }
+
 footer a:hover {
-    text-decoration: underline; /* Gạch chân khi di chuột vào */
+    text-decoration: underline;
+}
+
+.authors-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.section-header h2 {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.section-header p {
+    margin-top: 0;
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;       
+    row-gap: 20px;              
+}
+
+.grid img {
+    width: 100%;                 
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;              
+    justify-content: center;      
+    gap: 30px;                    
+    margin-top: 20px;
+}
+
+.game-card {
+    text-align: center; 
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px; 
+}
+
+.game-card img {
+    width: 100%;     
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #323238;
+}
+
+.game-card h3 {
+    color: #03dac6;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #6200ee;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
 }

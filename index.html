@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Final Project</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <main id="main-content">
         <h1>My final HTML project</h1>
         
-        <section>
+        <section class="intro-section"> 
             <h2>Các game yêu thích của tôi</h2>
             <p>Dưới đây là các game tôi chơi vào thời gian rảnh:</p>
             
@@ -22,16 +23,26 @@
             </ul>
         </section>
 
-        <article>
-            <h2>Tác giả của những game trên:</h2>
-            <p>Đây là các hình ảnh của tác giả từng game trên:</p>
+        <article class="authors-section">
+            <div class="section-header">
+                <h2>Tác giả của những game trên:</h2>
+                <p>Đây là các hình ảnh của tác giả từng game trên:</p>
+            </div>
             
-            <h2>Minecraft: </h2>
-            <img src="Notch.jpg">
-            <h2>Stardrew Valley:</h2>
-            <img src="Eric.jpg">
-            <h2>Friday Night Funkin:</h2>
-            <img src="tsb.jpg">
+            <div class="flex-container">
+                <div class="game-card">
+                    <h3>Minecraft:</h3>
+                    <img src="Notch.jpg" alt="Notch">
+                </div>
+                <div class="game-card">
+                    <h3>Stardrew Valley:</h3>
+                    <img src="Eric.jpg" alt="Eric">
+                </div>
+                <div class="game-card">
+                    <h3>Friday Night Funkin:</h3>
+                    <img src="tsb.jpg" alt="tsb">
+                </div>
+            </div>
         </article>
 
         <footer>
